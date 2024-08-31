@@ -82,7 +82,7 @@ class ImageNet(DatasetBase):
             train_x = train
             train_u = None
 
-        super().__init__(train_x=train_x, train_u=train_u, val=val, test=test)
+        super().__init__(train_x=train_x, train_u=train_u, val=test, test=test)
         label_set = set()
         for item in train:
             label_set.add(item.label)
